@@ -1,0 +1,337 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hari404 | Developer Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0b0f0e;
+            color: #f5f5f5;
+            line-height: 1.6;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 22px 8%;
+            border-bottom: 1px solid #222927;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            color: #55e6a5;
+        }
+
+        nav a {
+            color: #ccc;
+            text-decoration: none;
+            margin-left: 25px;
+        }
+
+        nav a:hover {
+            color: #55e6a5;
+        }
+
+        .hero {
+            min-height: 75vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+            padding: 70px 8%;
+        }
+
+        .hero-content {
+            max-width: 600px;
+        }
+
+        .tag {
+            color: #55e6a5;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: clamp(40px, 6vw, 65px);
+            line-height: 1.15;
+            margin-bottom: 20px;
+        }
+
+        h1 span {
+            color: #55e6a5;
+        }
+
+        .description {
+            color: #aaa;
+            font-size: 17px;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 22px;
+            margin-right: 10px;
+            border: 1px solid #55e6a5;
+            border-radius: 6px;
+            color: #55e6a5;
+            text-decoration: none;
+        }
+
+        .button.primary {
+            background: #55e6a5;
+            color: #0b0f0e;
+        }
+
+        .button:hover {
+            opacity: 0.8;
+        }
+
+        .terminal {
+            width: 100%;
+            max-width: 390px;
+            background: #121917;
+            border: 1px solid #29352f;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 15px 45px #0005;
+        }
+
+        .terminal-header {
+            padding: 13px;
+            background: #1a231f;
+            color: #aaa;
+        }
+
+        .terminal-body {
+            padding: 25px;
+            font-family: monospace;
+            color: #55e6a5;
+            font-size: 15px;
+        }
+
+        .terminal-body p {
+            margin-bottom: 12px;
+        }
+
+        .projects {
+            padding: 60px 8%;
+            background: #101513;
+        }
+
+        .projects h2 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .section-description {
+            color: #999;
+            margin-bottom: 30px;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .project-card {
+            background: #151c19;
+            border: 1px solid #29352f;
+            padding: 25px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            border-color: #55e6a5;
+        }
+
+        .project-card h3 {
+            color: #55e6a5;
+            margin-bottom: 12px;
+        }
+
+        .project-card p {
+            color: #aaa;
+            margin-bottom: 15px;
+        }
+
+        .project-card a {
+            color: #55e6a5;
+            text-decoration: none;
+        }
+
+        .about {
+            padding: 60px 8%;
+        }
+
+        .about h2 {
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        .about p {
+            color: #aaa;
+            max-width: 700px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            border-top: 1px solid #222927;
+            color: #888;
+        }
+
+        @media (max-width: 750px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 8px;
+                font-size: 14px;
+            }
+
+            .hero {
+                flex-direction: column;
+                align-items: flex-start;
+                padding-top: 55px;
+            }
+
+            .terminal {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">hari404.</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#about">About</a>
+            <a href="mailto:yourmail@example.com">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+            <p class="tag">// Developer in progress</p>
+
+            <h1>Hey, I'm Hari.<br>
+                I build things for <span>the web.</span>
+            </h1>
+
+            <p class="description">
+                Computer Science student exploring software development,
+                web technologies, and networking. Turning ideas into
+                useful projects, one line of code at a time.
+            </p>
+
+            <a class="button primary"
+               href="#projects">View Projects</a>
+
+            <a class="button"
+               href="https://github.com/"
+               target="_blank" rel="noopener noreferrer">
+                GitHub ↗
+            </a>
+        </div>
+
+        <div class="terminal">
+            <div class="terminal-header">
+                ● &nbsp; ● &nbsp; ● &nbsp; &nbsp; hari@developer
+            </div>
+
+            <div class="terminal-body">
+                <p>$ whoami</p>
+                <p>Computer Science Student</p>
+                <br>
+                <p>$ interests --list</p>
+                <p>Web Development</p>
+                <p>Programming</p>
+                <p>Networking & Security</p>
+                <br>
+                <p>$ status</p>
+                <p>Learning something new...</p>
+                <p>█</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="projects" id="projects">
+
+        <h2>Featured Projects</h2>
+        <p class="section-description">
+            A few things I've built or am exploring.
+        </p>
+
+        <div class="project-grid">
+
+            <div class="project-card">
+                <h3>Password Manager</h3>
+                <p>
+                    A Python and MySQL project for securely
+                    managing passwords.
+                </p>
+                <a href="https://github.com/">View project ↗</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Web Development</h3>
+                <p>
+                    Websites and experiments built with HTML,
+                    CSS, and JavaScript.
+                </p>
+                <a href="https://github.com/">View project ↗</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Network Lab</h3>
+                <p>
+                    Learning networking concepts through
+                    hands-on experiments and documentation.
+                </p>
+                <a href="https://github.com/">View project ↗</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2>About Me</h2>
+
+        <p>
+            I'm a CSE student who enjoys solving problems,
+            exploring technology, and building practical things.
+            This website is my little corner of the internet,
+            where I share my work and learning journey.
+        </p>
+    </section>
+
+    <footer>
+        <p>Designed & built by Hari404.</p>
+        <p>© 2026 | Hosted with GitHub Pages</p>
+    </footer>
+
+</body>
+</html>
